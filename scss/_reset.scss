@@ -12,11 +12,12 @@
 :root {
   --negro: #181818;
   --blanco: #ececec;
-  --gris: lightgrey;
-  --rojo: #dc5f85;
+  --gris: hsl(240, 5%, 91%);
+  --rojo: hsl(14, 88%, 65%);
+  --azul: hsl(238, 29%, 16%);
 
   /* Tipografía */
-  --tipo-principal: "Montserrat", sans-serif;
+  --tipo-principal: "Kumbh Sans", sans-serif;
   --tipo-secundaria: Verdana;
 }
 
