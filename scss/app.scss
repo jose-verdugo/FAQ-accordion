@@ -21,28 +21,75 @@ body {
   &_left {
     position: relative;
     overflow: hidden;
-    width: calc(45%);
+    width: calc(50%);
     height: 100%;
   }
   &_desktop {
     width: auto;
     height: 20rem;
     position: absolute;
-    left: -5rem;
+    left: -4rem;
     bottom: 8rem;
     z-index: 2;
   }
   &_bg {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: -18rem;
+    left: -35rem;
     z-index: 1;
     width: auto;
   }
+
+  &_cube {
+    position: absolute;
+    z-index: 3;
+    top: 14rem;
+    left: -6rem;
+    overflow: visible;
+  }
+
   &_rigth {
     @include flex(column, nowrap, center, center);
-    width: calc(45%);
+    width: calc(50%);
+    height: 100%;
   }
+
+  &_wrapper {
+    margin: 0 4rem 0 4rem;
+  }
+
   &_h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 2rem 0;
+  }
+  &_faq {
+  }
+  &_ul {
+  }
+  &_li {
+    border-bottom: 1px solid black;
+  }
+  &_question {
+    @include flex(row, nowrap, space-between, center);
+    padding: 01rem 0 1rem 0;
+  }
+  &_span {
+  }
+  &_arrow {
+    width: auto;
+  }
+  &_info {
+    overflow: hidden;
+    max-height: 0.1rem;
+    transition: all 0.5s ease-in-out;
+
+    &--activo {
+      max-height: 100%;
+      margin: 0 0 1rem 0;
+      overflow: auto;
+    }
+  }
+  &_p {
   }
 }

@@ -189,30 +189,68 @@ body {
 .Main_left {
   position: relative;
   overflow: hidden;
-  width: 45%;
+  width: 50%;
   height: 100%;
 }
 .Main_desktop {
   width: auto;
   height: 20rem;
   position: absolute;
-  left: -5rem;
+  left: -4rem;
   bottom: 8rem;
   z-index: 2;
 }
 .Main_bg {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: -18rem;
+  left: -35rem;
   z-index: 1;
   width: auto;
+}
+.Main_cube {
+  position: absolute;
+  z-index: 3;
+  top: 14rem;
+  left: -6rem;
+  overflow: visible;
 }
 .Main_rigth {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  width: 45%;
+  width: 50%;
+  height: 100%;
+}
+.Main_wrapper {
+  margin: 0 4rem 0 4rem;
+}
+.Main_h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 2rem 0;
+}
+.Main_li {
+  border-bottom: 1px solid black;
+}
+.Main_question {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+}
+.Main_arrow {
+  width: auto;
+  background-color: aqua;
+}
+.Main_info {
+  overflow: hidden;
+  height: 0;
+}
+.Main_info--activo {
+  height: auto;
+  margin: 0 0 1rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */
