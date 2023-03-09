@@ -9,8 +9,35 @@
   }
 }
 
-@mixin media($medida: 375px) {
+@mixin media($medida: 1050px) {
   @media screen and (max-width: $medida) {
     @content;
   }
 }
+
+// $sm: 576px !default; //Pequeño
+// $md: 768px !default; //Medio
+// $lg: 992px !default; //Grande
+// $xl: 1200px !default; //Muy grande
+
+// @mixin respond-to($breakpoint) {
+//   @if $breakpoint == sm {
+//     @media (max-width: $sm) {
+//       @content;
+//     }
+//   } @else if $breakpoint == md {
+//     @media (max-width: $md) {
+//       @content;
+//     }
+//   } @else if $breakpoint == lg {
+//     @media (max-width: $lg) {
+//       @content;
+//     }
+//   } @else if $breakpoint == xl {
+//     @media (max-width: $xl) {
+//       @content;
+//     }
+//   } @else {
+//     @error "No se reconoce la medida - $breakpoint. Utilice 'sm', 'md', 'lg' o 'xl'.";
+//   }
+// }
