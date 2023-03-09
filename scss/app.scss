@@ -13,10 +13,10 @@ body {
   &_container {
     @include flex(row, nowrap, space-between, center);
     position: relative;
-    width: 70rem;
+    width: 60rem;
     height: 35rem;
-    background-color: aliceblue;
     border-radius: 1rem;
+    background-color: var(--blanco);
   }
   &_left {
     position: relative;
@@ -68,26 +68,40 @@ body {
   &_ul {
   }
   &_li {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--gris);
   }
   &_question {
     @include flex(row, nowrap, space-between, center);
     padding: 01rem 0 1rem 0;
   }
   &_span {
+    font-weight: 600;
   }
   &_arrow {
     width: auto;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0 0.5rem 0 0;
+    fill: var(--rojo);
+    transition: all 0.5s linear;
+    cursor: pointer;
+    &--rotated {
+      transform: rotate(180deg);
+    }
   }
   &_info {
     overflow: hidden;
-    max-height: 0.1rem;
-    transition: all 0.5s ease-in-out;
+    height: 0;
+    transition: all 0.5s linear;
+    opacity: 0;
+    font-size: 0.9rem;
+    color: var(--gris-texto);
 
     &--activo {
-      max-height: 100%;
+      height: auto;
       margin: 0 0 1rem 0;
       overflow: auto;
+      opacity: 1;
     }
   }
   &_p {

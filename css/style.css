@@ -12,7 +12,8 @@
 :root {
   --negro: #181818;
   --blanco: #ececec;
-  --gris: hsl(240, 5%, 91%);
+  --gris: hsl(240, 3%, 78%);
+  --gris-texto: hsl(240, 1%, 57%);
   --rojo: hsl(14, 88%, 65%);
   --azul: hsl(238, 29%, 16%);
   /* Tipografía */
@@ -181,10 +182,10 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 70rem;
+  width: 60rem;
   height: 35rem;
-  background-color: aliceblue;
   border-radius: 1rem;
+  background-color: var(--blanco);
 }
 .Main_left {
   position: relative;
@@ -231,7 +232,7 @@ body {
   margin: 0 0 2rem 0;
 }
 .Main_li {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--gris);
 }
 .Main_question {
   display: flex;
@@ -240,17 +241,34 @@ body {
   align-items: center;
   padding: 1rem 0 1rem 0;
 }
+.Main_span {
+  font-weight: 600;
+}
 .Main_arrow {
   width: auto;
-  background-color: aqua;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0.5rem 0 0;
+  fill: var(--rojo);
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.Main_arrow--rotated {
+  transform: rotate(180deg);
 }
 .Main_info {
   overflow: hidden;
   height: 0;
+  transition: all 0.5s linear;
+  opacity: 0;
+  font-size: 0.9rem;
+  color: var(--gris-texto);
 }
 .Main_info--activo {
   height: auto;
   margin: 0 0 1rem 0;
+  overflow: auto;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
